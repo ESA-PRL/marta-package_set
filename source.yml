@@ -10,6 +10,24 @@ version_control:
     url: https://github.com/ESA-PRL/drivers-orogen-inclinometer_solar2.git
     branch: master
 
+    #- drivers/etherlab:
+    #- type: archive
+    #- url: http://www.etherlab.org/download/ethercat/ethercat-1.5.2.tar.bz2
+    #- update_cached_file: false
+    #- drivers/etherlab:
+    #- type: hg
+    #- url: http://hg.code.sf.net/p/etherlabmaster/code
+    #- branch: stable-1.5
+
+  - drivers/orogen/joints_forcetorque:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-joints_forcetorque.git
+    branch: master
+  - drivers/soem:
+    type: git
+    url: https://github.com/OpenEtherCATsociety/SOEM
+    branch: master
+
 overrides:
   - control/locomotion_control:
     branch: marta

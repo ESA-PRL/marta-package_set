@@ -1,0 +1,9 @@
+<package>
+  <description brief="Etherlab">
+  EtherCAT Master for Linux
+  </description>
+  <author>Florian Pose</author>
+  <license>GPLv2</license>
+  <url>https://sourceforge.net/p/etherlabmaster/code/ci/stable-1.5/tree/</url>
+  <tags>stable</tags>
+</package>

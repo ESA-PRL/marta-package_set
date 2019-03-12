@@ -3,3 +3,89 @@
 
 cmake_package "drivers/inclinometer_solar2"
 orogen_package "drivers/orogen/inclinometer_solar2"
+
+#if !has_etherlab?
+#import_package 'drivers/etherlab' do |pkg|
+#    def pkg.prepare
+#        message "Configuring etherlab package..."
+#        in_dir(srcdir) do
+#            run("bootstrap", "./bootstrap")
+#            run("prepare_configure","./configure", "--disable-8139too", "--prefix=#{Autobuild.prefix}")
+#        end
+#        isolate_errors do
+#            build
+#            progress_done
+#        end
+#    end
+#
+#    def pkg.build
+#        in_dir (srcdir) do
+#            run("build", Autobuild.tool(:make))
+#            run("build_modules", Autobuild.tool(:make), 'modules')
+#        end
+#        message "Built etherlab package"
+#    end
+#    
+#    def pkg.install
+#        message "Installing etherlab package..."
+#
+#        in_dir (srcdir) do
+#            super
+#            run('install', 'make install')
+#
+#            # cannot do modprobe in docker
+#            if (not ENV.has_key?('RUNNING_IN_DOCKER')) or (ENV['RUNNING_IN_DOCKER'] == 'false')
+#                run('install_modules', 'make modules_install')
+#            end
+#
+#        end
+#        message "Installed etherlab package"
+#    end
+#end
+#end
+
+if !has_soem?
+    import_package 'drivers/soem' do |pkg|
+        def pkg.prepare
+            message "Configuring soem package..."
+            in_dir(srcdir) do
+                run("prepare_configure","mkdir", "build", "--prefix=#{Autobuild.prefix}")
+                run("cd","cd", "build")
+            end
+            isolate_errors do
+                build
+                progress_done
+            end
+        end
+
+        def pkg.build
+            in_dir (srcdir) do
+                run("cmake", Autobuild.tool(:cmake), '..')
+                run("build", Autobuild.tool(:make))
+            end
+            message "Built soem package"
+        end
+        
+        def pkg.install
+            message "Installing soem package..."
+
+    #        in_dir (srcdir) do
+    #            super
+    #            run('install', 'make install')
+    #
+    #            # cannot do modprobe in docker
+    #            if (not ENV.has_key?('RUNNING_IN_DOCKER')) or (ENV['RUNNING_IN_DOCKER'] == 'false')
+    #                run('install_modules', 'make modules_install')
+    #            end
+    #
+    #        end
+            message "Installed soem package"
+        end
+    end
+end
+
+#cmake_package "drivers/etherlab"
+cmake_package "drivers/soem"
+
+orogen_package "drivers/orogen/joints_forcetorque"
+
