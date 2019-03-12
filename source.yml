@@ -1,5 +1,15 @@
 name: marta
 
+version_control:
+  - drivers/inclinometer_solar2:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-inclinometer_solar2.git
+    branch: master
+  - drivers/orogen/inclinometer_solar2:
+    type: git
+    url: https://github.com/ESA-PRL/drivers-orogen-inclinometer_solar2.git
+    branch: master
+
 overrides:
   - control/locomotion_control:
     branch: marta
