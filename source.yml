@@ -33,5 +33,7 @@ overrides:
     branch: marta
   - control/orogen/locomotion_control:
     branch: marta
+  - drivers/platform_driver:
+    branch: marta
   - drivers/orogen/platform_driver:
     branch: marta
