@@ -1,0 +1,7 @@
+<package>
+  <description brief="Simple Open EtherCAT Master Library">
+  </description>
+  <author>Open EtherCAT Society</author>
+  <license>GPL</license>
+  <url>https://github.com/OpenEtherCATsociety/SOEM</url>
+</package>
