@@ -35,5 +35,3 @@ overrides:
     branch: marta
   - drivers/platform_driver:
     branch: marta
-  - drivers/orogen/platform_driver:
-    branch: marta
