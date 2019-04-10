@@ -3,11 +3,11 @@ name: marta
 version_control:
   - drivers/inclinometer_solar2:
     type: git
-    url: https://github.com/ESA-PRL/drivers-inclinometer_solar2.git
+    url: https://github.com/esa-prl/drivers-inclinometer_solar2.git
     branch: master
   - drivers/orogen/inclinometer_solar2:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-inclinometer_solar2.git
+    url: https://github.com/esa-prl/drivers-orogen-inclinometer_solar2.git
     branch: master
 
     #- drivers/etherlab:
@@ -21,7 +21,7 @@ version_control:
 
   - drivers/orogen/joints_forcetorque:
     type: git
-    url: https://github.com/ESA-PRL/drivers-orogen-joints_forcetorque.git
+    url: https://github.com/esa-prl/drivers-orogen-joints_forcetorque.git
     branch: master
   - drivers/soem:
     type: git
