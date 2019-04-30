@@ -35,3 +35,5 @@ overrides:
     branch: marta
   - drivers/platform_driver:
     branch: marta
+  - exoter/exoter_kinematics:
+    branch: marta
