@@ -13,6 +13,14 @@ version_control:
     type: git
     url: https://github.com/esa-prl/soem
     branch: pkg-config
+  - drivers/pcde:
+    type: git
+    url: https://github.com/esa-prl/drivers-marta_pcde.git
+    branch: master
+  - drivers/orogen/pcde:
+    type: git
+    url: https://github.com/esa-prl/drivers-orogen-marta_pcde.git
+    branch: master
 
 overrides:
   - control/locomotion_control:
