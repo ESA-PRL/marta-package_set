@@ -11,8 +11,8 @@ version_control:
     branch: master
   - drivers/soem:
     type: git
-    url: https://github.com/OpenEtherCATsociety/SOEM
-    branch: master
+    url: https://github.com/esa-prl/soem
+    branch: pkg-config
 
 overrides:
   - control/locomotion_control:
