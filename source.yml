@@ -25,3 +25,5 @@ overrides:
     branch: marta
   - exoter/exoter_kinematics:
     branch: marta
+  - control/orogen/motion_translator:
+    branch: marta

@@ -3,5 +3,5 @@
 cmake_package "drivers/inclinometer_solar2"
 orogen_package "drivers/orogen/inclinometer_solar2"
 
-cmake_package "drivers/pcde"
-orogen_package "drivers/orogen/pcde"
+#cmake_package "drivers/pcde"
+#orogen_package "drivers/orogen/pcde"
