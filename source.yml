@@ -9,10 +9,6 @@ version_control:
     type: git
     url: https://github.com/esa-prl/drivers-orogen-inclinometer_solar2.git
     branch: master
-  - drivers/soem:
-    type: git
-    url: https://github.com/esa-prl/soem
-    branch: pkg-config
   - drivers/pcde:
     type: git
     url: https://github.com/esa-prl/drivers-marta_pcde.git
@@ -26,8 +22,6 @@ overrides:
   - control/locomotion_control:
     branch: marta
   - control/orogen/locomotion_control:
-    branch: marta
-  - drivers/platform_driver:
     branch: marta
   - exoter/exoter_kinematics:
     branch: marta
