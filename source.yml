@@ -1,6 +1,21 @@
 name: marta
 
+imports:
+  - github: esa-prl/rover-package_set
+
 version_control:
+  - drivers/soem:
+    type: git
+    url: https://github.com/esa-prl/soem
+    branch: pkg-config
+  - drivers/platform_driver_ethercat:
+    type: git
+    url: https://github.com/esa-prl/drivers-platform_driver_ethercat.git
+    branch: master
+  - drivers/orogen/platform_driver_ethercat:
+    type: git
+    url: https://github.com/esa-prl/drivers-orogen-platform_driver_ethercat.git
+    branch: master
   - drivers/inclinometer_solar2:
     type: git
     url: https://github.com/esa-prl/drivers-inclinometer_solar2.git

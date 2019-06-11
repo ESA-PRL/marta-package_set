@@ -1,5 +1,10 @@
 # When the source.yml contains the repository info, you should specify here how that package can be build.
 # The packages that are commented out are already defined in the same way in the original rock package set.
+cmake_package "drivers/soem"
+
+cmake_package "drivers/platform_driver_ethercat"
+orogen_package "drivers/orogen/platform_driver_ethercat"
+
 cmake_package "drivers/inclinometer_solar2"
 orogen_package "drivers/orogen/inclinometer_solar2"
 
