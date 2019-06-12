@@ -4,6 +4,14 @@ imports:
   - github: esa-prl/rover-package_set
 
 version_control:
+  - bundles/marta:
+    type: git
+    url: https://github.com/esa-prl/bundles-marta.git
+    branch: master
+  - deployments/orogen/marta_deployments:
+    type: git
+    url: https://github.com/esa-prl/deployments-orogen-marta_deployments.git
+    branch: master
   - drivers/soem:
     type: git
     url: https://github.com/esa-prl/soem
