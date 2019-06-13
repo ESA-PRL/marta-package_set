@@ -46,6 +46,8 @@ overrides:
     branch: marta
   - control/orogen/locomotion_control:
     branch: marta
+  - control/orogen/locomotion_switcher:
+    branch: marta
   - exoter/exoter_kinematics:
     branch: marta
   - control/orogen/motion_translator:
