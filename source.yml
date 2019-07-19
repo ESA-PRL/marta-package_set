@@ -40,6 +40,10 @@ version_control:
     type: git
     url: https://github.com/esa-prl/drivers-orogen-marta_pcde.git
     branch: master
+  - control/orogen/ptu_control:
+    type: git
+    url: https://github.com/esa-prl/control-orogen-ptu_control.git
+    branch: master
 
 overrides:
   - control/locomotion_control:
